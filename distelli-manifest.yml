@@ -16,7 +16,7 @@
     - echo "PreInstall Starting."
   PostInstall:
     - echo "PostInstall Starting."
-    - npm install
+    # - npm install
   Exec:
     - echo "Exec Starting."
     - exec nodejs server.js
