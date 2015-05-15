@@ -13,6 +13,8 @@
   PkgExclude:
     - node_modules/
   PreInstall:
+    - sudo apt-get install nodejs -y
+    - sudo apt-get install npm -y
     - echo "PreInstall Starting."
   PostInstall:
     - echo "PostInstall Starting."
