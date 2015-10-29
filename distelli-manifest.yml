@@ -10,8 +10,10 @@
 
   PkgInclude:
     - server.js
-  PkgExclude:
-    - node_modules/
+    - node_modules/*
+  Build:
+    - npm install
+    - npm test
   PreInstall:
     - sudo apt-get install nodejs -y
     - sudo apt-get install npm -y
